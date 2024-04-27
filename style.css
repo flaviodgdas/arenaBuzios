@@ -71,6 +71,11 @@ nav > a:hover {/*menu botao mudar cor*/
     text-align: center;
     font-size: 20px;      
   }
+
+  .reserva {
+    margin-top: 10px;
+  }
+  
   ol li {
     margin-left: 40px;
     color: white;

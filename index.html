@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>arena</title>
+    <title>Reserva de Jogo de Futebol arena buzios</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="carregar()">
@@ -25,38 +25,39 @@
         <a href="bar.html" rel="next">Bar&CIA</a>        
         <a href="contato.html" rel="next">Contato</a>
     </nav>
-    <main>        
-        <h1>Marque aqui sua pelada</h1>
-        <ul>
-            <li> <abbr>Segunda-feira</abbr></li>
-                <ol>
-                    <li>Livre</li>
-                </ol>
-            <li> <abbr>Terça-feira</abbr></li>
-                <ol>
-                    <li>Livre</li>
-                </ol>
-            <li> <abbr>Quarta-feira</abbr></li>
-                <ol>
-                    <li>Livre</li>
-                </ol>
-            <li> <abbr>Quinta-feira</abbr></li>
-                <ol>
-                    <li>Livre</li>
-                </ol>
-            <li> <abbr>Sexta-feira</abbr></li>
-                <ol>
-                    <li>Livre</li>
-                </ol>
-            <li> <abbr>Sábado</abbr></li>
-                <ol>
-                    <li>Livre</li>
-                </ol>
-            <li> <abbr>Domingo</abbr></li>
-                <ol>
-                    <li>Livre</li>
-                </ol>
-        </ul>        
+    <main>
+        <h2>Reserva de Jogo de Futebol</h2>
+
+<label for="dia">Escolha o dia:</label>
+<select id="dia">
+  <option value="Segunda">Segunda-feira</option>
+  <option value="Terça">Terça-feira</option>
+  <option value="Quarta">Quarta-feira</option>
+  <option value="Quinta">Quinta-feira</option>
+  <option value="Sexta">Sexta-feira</option>
+  <option value="Sábado">Sábado</option>
+  <option value="Domingo">Domingo</option>
+</select>
+
+<label for="horario">Escolha o horário:</label>
+<select id="horario">
+  <option value="19">19h</option>
+  <option value="20">20h</option>
+  <option value="21">21h</option>
+  <option value="22">22h</option>
+  <option value="23">23h</option>
+</select>
+
+<label for="nome">Nome:</label>
+<input type="text" id="nome" placeholder="Seu nome">
+
+<label for="telefone">Telefone:</label>
+<input type="text" id="telefone" placeholder="Seu telefone">
+
+<button onclick="confirmarReserva()">Confirmar Reserva</button>
+
+<div id="reservasConfirmadas" class="reserva"></div> 
+
     </main>
     <script src="horarios.js"></script>
     <footer>
