@@ -74,7 +74,14 @@ nav > a:hover {/*menu botao mudar cor*/
 
   .reserva {
     margin-top: 10px;
+    color: red;
   }
+label {
+    color: black
+}
+select {
+    color: blue;
+}
   
   ol li {
     margin-left: 40px;
